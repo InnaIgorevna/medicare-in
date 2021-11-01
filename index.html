@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicareEnroll</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+    <link href="css/aos.css" rel="stylesheet">
+
+ 
+</head>
+
+<body class="body__main">
+
+    <header>
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="#"><img
+                                alt="Logo with an American Flag and &quot;Medicare Enroll&quot; next to it."
+                                class="styles_logo__22loG styles_logo__2I-b3"
+                                src="img/medicare.png"></a></br>
+                                <span>A non-government entity</span>
+                    </div>
+                    <div class="nav__phone">
+                        <div class="nav__phone-item">
+                            <div class="phone__label">
+                                <a href="tel:18668414684">1-866-841-4684</a> | TTY: 711s
+                            </div>
+
+                        </div>
+                        <div class="nav__phone-item">
+                            <div class="phone__descr">
+                                Call a licensed insurance agent<br />M - F, 8 AM - 6 PM CST
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class='header__offset'></div>
+        <div class="header__wrapper">
+            <div class="container">
+                <div class="header">
+                    <div class="header__item">
+                        <h1 class="header__title" data-aos="fade-up" data-aos-duration="1000">Get the right Medicare
+                            plan for you.</h1>
+                        <p class="header__subtitle" data-aos="fade-up" data-aos-duration="800">Our licensed insurance
+                            agents are ready to help.</p>
+                        <p class="header__text" data-aos="fade-up" data-aos-duration="2000">Make sure you get the
+                            coverage you need and the benefits you deserve. Our licensed insurance agents can offer you
+                            a wide selection of plans from leading insurance companies. Request your free Medicare
+                            coverage review today.<br /><br />You may qualify for:</p>
+                        <ul class="header__list">
+                            <li class="header__list-item" data-aos-offset="50" data-aos="fade-right"
+                                data-aos-duration="1000" data-aos-delay="1100">Part B premium giveback that puts money
+                                back in your pocket</li>
+                            <li class="header__list-item" data-aos-offset="50" data-aos="fade-right"
+                                data-aos-duration="1000" data-aos-delay="1200">Over-the-counter allowances</li>
+                            <li class="header__list-item" data-aos-offset="50" data-aos="fade-right"
+                                data-aos-duration="1000" data-aos-delay="1300">Dental, vision and hearing coverage</li>
+                            <li class="header__list-item" data-aos-offset="50" data-aos="fade-right"
+                                data-aos-duration="1000" data-aos-delay="1400">And more</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="debug_wrap" style="height: auto; overflow: scroll;"></div>
+    <main>
+        <section class="section__about">
+            <div class="container">
+                <div class="about">
+                    <div class="about__item">
+                        <div class="about__title" data-aos="fade-up" data-aos-duration="2000">Tell us a little about
+                            yourself.</div>
+                        <div class="about__text" data-aos="fade-up" data-aos-duration="1500">Talk to a licensed
+                            insurance agent and get a free review of the Medicare plans in your area. There's no cost to
+                            you, and no obligation to enroll in a plan.</div>
+                    </div>
+                    <div class="about__item">
+
+                        <form class="about__form" id="leadform" action="" method="POST" data-aos="fade-up"  data-aos-duration="1000">
+                            <div class="logo">
+                                <a href="#"><img
+                                        alt="Logo with an American Flag and &quot;Medicare Enroll&quot; next to it."
+                                        class="styles_logo__22loG styles_logo__2I-b3"
+                                        src="img/medicare.png"></a><br>
+                                        <span>A non-government entity</span>
+                                    </a>
+                            </div>
+                            <div class="nav__phone">
+                                <div class="nav__phone-item">
+                                    <div class="phone__label">
+                                        <a href="tel:18668414684">1-866-841-4684</a> | TTY: 711
+                                    </div>
+        
+                                </div>
+                                <div class="nav__phone-item">
+                                    <div class="phone__descr">
+                                        Call a licensed insurance agent<br />M - F, 8 AM - 6 PM CST
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <button name="submit" type="submit" id="submit_btn" class="btn form__btn">Call Now</button>
+                            <div class="form__title">Request your Medicare Coverage Review.</div>
+                            <div class="inputs">
+                                <input type="hidden" id="ajax_url" value="post.php">
+                                <input type="hidden" name="lead_type_thom" id="lead_type_thom" value="Inbound Lead">
+                                <input type="hidden" name="utm_content" id="utm_content" value="null">
+                                <input type="hidden" name="utm_medium" id="utm_medium" value="null">
+                                <input type="hidden" name="utm_source" id="utm_source" value="null">
+                                <input type="hidden" name="campaign_name" id="campaign_name" value="coopaep">
+                                <input type="text" id="first_name" required name="first_name" class="form__input"
+                                    placeholder="First Name">
+                                <input type="text" id="last_name" required name="last_name" class="form__input"
+                                    placeholder="Last Name">
+                                <input type="text" pattern="[0-9]{5}" id="zip" required name="zip" class="form__input"
+                                    placeholder="ZIP"
+                                    oninvalid="this.setCustomValidity('Please enter a 5 digit ZIP code')"
+                                    oninput="this.setCustomValidity('')">
+                                <input type="tel" pattern="[0-9\-]{10,15}" id="phone_1" min="10" max="15" required
+                                    name="phone_1" class="form__input" placeholder="Phone"
+                                    oninvalid="this.setCustomValidity('Please enter a 10 digit phone number')"
+                                    oninput="this.setCustomValidity('')">
+                                <input type="email" id="email" required name="email" class="form__input"
+                                    placeholder="Email">
+                            </div>
+                            <div id="response"></div>
+                            <button name="submit" type="submit" id="submit_btn" class="btn form__btn">Submit</button>
+                            <div class="info-block"><a href="#" class="text-form">Or call us now</a> </div>
+                            
+                            <p>By providing your information you are agreeing to receive information and to be contacted
+                                by Integrity Marketing Group LLC. For more information, see our <a class="policy"
+                                    href="./privacy.html" target="_blank">Privacy Policy</a>.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__info">
+            <img src="./img/info__img.jpg" alt="img" class="info__img">
+            <div class="container">
+                <div class="info">
+                    <div class="info__block">
+                        <div class="info__block-item" data-aos="fade-right" data-aos-duration="1500">
+                            <img src="./img/info.jpg" alt="info">
+                        </div>
+                        <div class="info__block-item">
+                            <div class="info__title" data-aos="fade-left" data-aos-duration="2000">We can be your go-to
+                                Medicare resource.</div>
+                            <div class="info__text" data-aos="fade-up" data-aos-duration="1000">Everyone deserves a
+                                Medicare plan that fits their needs and budget. We can help you find coverage that's
+                                right for you by answering important questions like:</div>
+                            <ul class="info__list">
+                                <li class="info__list-item" data-aos="fade-right" data-aos-offset="100"
+                                    data-aos-duration="1500" data-aos-delay="100">Did your plan's provider network
+                                    change affecting your choice of doctors and hospitals?</li>
+                                <li class="info__list-item" data-aos="fade-right" data-aos-offset="100"
+                                    data-aos-duration="1500" data-aos-delay="200">Have changes to your prescription drug
+                                    coverage increased the cost of your medications?</li>
+                                <li class="info__list-item" data-aos="fade-right" data-aos-offset="100"
+                                    data-aos-duration="1500" data-aos-delay="200"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info__block second__block">
+                        <div class="info__block-item">
+                            <div class="info__title-second" data-aos="fade-right" data-aos-duration="2000">Let us help
+                                you find coverage that fits.</div>
+                            <div class="info__subtitle">The team at MedicareEnroll is here for you. Our licensed
+                                insurance agents are ready to give you a <strong>FREE</strong> Medicare coverage review
+                                today.</div>
+                            <div>
+                                <div class="info__date">Call now for a FREE coverage review:</div>
+                                <div class="info__phone"><a href="tel:18668414684">1-866-841-4684</a> <span>(TTY:
+                                        711)</span></div>
+                                <div class="info__date">You will speak to a licensed insurance agent.</div>
+                                <a href="tel:18668414684">
+                                <button class="info__block-btn">Call now</button>
+                                </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__text">
+                <div class="footer-logo"><img
+                        alt="Logo with an American Flag and &quot;Medicare Enroll&quot; next to it."
+                        src="img/medicare.png"></div>
+                <div class="footer-questions"><span>Questions?</span>
+                    Call 1-866-841-4684 to speak with a licensed insurance agent.</div>
+                <div class="footer-legal">MedicareEnroll, is a brand operated by Integrity Marketing Group, LLC and used
+                    by its affiliated licensed insurance agencies that are certified to sell Medicare products.
+                    MedicareEnroll, www.medicareenroll.com is a non-government website, and is not endorsed by the
+                    Centers for Medicare & Medicaid Services (CMS), the Department of Health and Human Services (DHHS),
+                    or any other government agency.<br /><br />For a complete list of available plans please contact
+                    1-800-MEDICARE (TTY users should call 1-877-486-2048), 24 hours a day/7 days a week or consult
+                    www.medicare.gov.<br /><br />By providing this information you give your express written consent to
+                    be contacted by a licensed insurance agent, which may include the use of an autodialer, for the
+                    purpose of setting an appointment for a sales presentation or providing information on Medicare
+                    Advantage plan benefits and services. Your potential enrollment in a Medicare plan is not dependent
+                    on this agreement to be contacted. You may opt out of future contact at any time.<br /><br /><a
+                        href="./img/privacy.png" target="_blank">Privacy Notice</a> | <a
+                        href="./img/terms.png" target="_blank">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/aos.js"></script>
+
+      <script>
+        AOS.init({disable:'mobile'});
+      </script>
+      <script type="text/javascript">
+    (function() {
+    var field = 'xxTrustedFormCertUrl';
+    var provideReferrer = false;
+    var invertFieldSensitivity = false;
+    var tf = document.createElement('script');
+    tf.type = 'text/javascript'; tf.async = true;
+    tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
+    '://api.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l='+new Date().getTime()+Math.random() + '&invert_field_sensitivity=' + invertFieldSensitivity;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s); }
+    )();
+    </script>
+</body>
+
+</html>
