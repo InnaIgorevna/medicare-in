@@ -1279,7 +1279,12 @@ footer .footer-legal {
     max-width: 300px;
   }
 }
-
+.privacynotice img{
+  width: auto; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto;
+}
 @media (max-width: 768px) {
   .header__wrapper-thanks .thanks__title {
     text-align: center;
