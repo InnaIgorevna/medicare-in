@@ -1286,6 +1286,9 @@ footer .footer-legal {
     max-width: 100%;
     font-size: 50px;
   }
+  .privacynotice img{
+    width: 100%;
+  }
 }
 
 .thanks__second-title {
