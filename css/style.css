@@ -147,13 +147,15 @@ nav .navbar .nav__phone .phone__label {
   border: solid transparent;
   border-width: 0 0 2px;
   color: #052a63;
-  cursor: pointer;
+
   min-height: 21px;
   padding-bottom: 4px;
   text-decoration: none;
   text-transform: capitalize;
 }
-
+nav .navbar .nav__phone .phone__label a{
+  cursor: pointer;
+}
 nav .navbar .nav__phone .phone__label a {
   color: #052a63;
 }
@@ -1146,9 +1148,11 @@ ol li {
   margin-top: 15px;
   margin-bottom: 15px;
   position: relative;
+
+}
+.info__phone a{
   cursor: pointer;
 }
-
 .info__phone a {
   color: rgba(34, 63, 153, 0.97);
 }
